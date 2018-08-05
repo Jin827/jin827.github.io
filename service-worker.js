@@ -22,7 +22,7 @@ const cacheFiles = [
 ];
 
 if( 'function' === typeof importScripts) {
-	importScripts('serviceworker-cache-polyfill.js');
+	importScripts('/vendors/js/serviceworker-cache-polyfill.js');
 }
 
 self.addEventListener('install', (e) => {
