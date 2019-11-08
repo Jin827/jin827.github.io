@@ -754,17 +754,6 @@
   </footer>
   <script src="/resources/js/app.js" async></script>
   <script src="http://localhost:35729/livereload.js" async></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker
-          .register('/service-worker.js')
-          .then(() => console.log("[Service Worker] Registered"))
-          .catch((err) => console.log(`[Service Worker] Registration failed: ${err}`))
-      });
-    }
-
-  </script>
 </body>
 
 </html>
